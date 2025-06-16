@@ -1,8 +1,7 @@
 import pandas as pd
 
-positive_reviews = ["loved", "amazing", "great", "excellent", "best", "wonderful","fantastic", "superb", "enjoyed", "brilliant"] * 5
-negative_reviews = ["hated", "terrible", "boring", "worst", "poor", 
-"awful", "bad", "disappointing", "unwatchable", "weak"] * 5
+positive_reviews = ["I loved the movie", "Amazing film", "Great story", "Excellent direction", "Best performance", "Worth watching", "Damn good", "Great choreography", "A must watch", "Blockbuster movie"] * 5
+negative_reviews = ["I hated the movie", "Terrible film", "Boring plot", "Worst acting", "Poor direction", "Waste of money", "worst movie of the year", "bad vfx", "poor choice of dialogues", "terrible cast"] * 5
 
 all_reviews = positive_reviews + negative_reviews
 all_sentiments = ["positive"] * 50 + ["negative"] * 50
@@ -37,5 +36,6 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 def predict_review_sentiment(model, vectorizer, review):
     review_vector = vectorizer.transform([review])
     return model.predict(review_vector)
+# For example:  
 print (predict_review_sentiment(model, vectorizer, "Horrible movie"))
 
