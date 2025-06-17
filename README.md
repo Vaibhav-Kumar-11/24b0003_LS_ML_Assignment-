@@ -21,7 +21,7 @@ This assignment focuses on basic ML workflows and data handling using **NumPy**,
 
 ## 📌 Q4 – Sentiment Classification (BoW + Naive Bayes)  
 - Created a movie review dataset.  
-- Used `CountVectorizer` and trained a `MultinomialNB` model (80–20 split).  
+- Used `CountVectorizer` and trained a `MultinomialNB` model (80–20 split and 75-25 split).  
 - Predicted sentiment for a new custom review.
 
 ## 📌 Q5 – Product Review Classification (TF-IDF + Logistic Regression)  
